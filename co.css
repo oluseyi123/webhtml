@@ -1,0 +1,269 @@
+@import url('https://fronts.gogglepis.com/css?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+body {
+    background: #081b29;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+
+}
+
+.logo {
+    font-size: 40px;
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 800;
+    background: url();
+    background-position: top right;
+    background-size: 50px;
+}
+
+
+.navbar a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 3s;
+    
+
+}
+
+.navbar a:hover, 
+.navbar a.active {
+    color: blue;
+}
+
+
+
+
+.Contact-content {
+    max-width: 600px;
+    color: #82adbe;
+    
+}
+.Contact-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+   
+    
+}
+
+.Contact-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100px;
+    background: #081b29;
+    animation: showRight is ease forwards;
+    animation-delay: 1s;
+}
+
+.Contact-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #82adbe;
+
+}
+.Contact-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+
+}
+.Contact-content .btn-box {
+  
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+   
+}
+
+.btn-box a:nth-child(2) {
+  
+    background: transparent;
+    color: #00abf0;
+}
+
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: lightblue;
+    z-index: -1;
+    transition: 1s;
+
+    
+}
+
+
+.btn-box a:hover::before {
+   
+    width: 100%;
+}
+
+
+.Contact-sci {
+    position: top;
+    bottom: 40px;
+    width: 170px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Contact-sci a {
+    position: top;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 2s;
+
+}
+.Contact-sci a:hover {
+    color: #081b29;
+}
+
+.Contact-sci a::before {
+    content: '';
+    position: top;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: lightblue;
+    z-index: -1;
+    transition: 2s;
+
+}
+
+
+.Contact-sci a:hover::before {
+    width: 100px;
+
+} 
+
+/*-------------------------------------*/
+/* VARIABLE                            */
+/*-------------------------------------*/
+
+:root {
+
+    --color-white: hsl(0, 0%, 100%)
+    --colour-light-grey: hsl(222, 45%, 89%)
+    --colour-blue: hsl(220, 15%, 55%)
+    --colour-dark-blue: hsl(210, 44%, 22%)
+    
+}
+
+/*-------------------------------------*/
+/* BASE STYLES                         */
+/*-------------------------------------*/
+
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: unset;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    background-color: lightgray;
+    font-family: outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    display: grid;
+    place-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*-------------------------------------*/
+/* QR CARD                             */
+/*-------------------------------------*/
+
+main {
+    background-color: white;
+    max-width: 320px;
+    padding: 1.075rem;
+    border-radius: 1.35rem;
+    box-shadow: 0 1.6rem 1.6rem hsla(0, 0%, 0%, 0.05);
+    text-align: center;
+    margin: 1.075rem;
+
+}
+
+img {
+    border-radius: 0.075rem;
+}
+
+h1 {
+    font-size: 1.375rem;
+    line-height: 1.275rem;
+    margin-top: 1.1cm;
+    color: darkblue;
+}
+
+p {
+    line-height: 1.3;
+    color: blue;
+    margin: 1.075cm;
+
+}

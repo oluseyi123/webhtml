@@ -1,0 +1,284 @@
+@import url('https://fronts.gogglepis.com/css?family=open+sans:wght@300;400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans' sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#009688 0%,#009688 130px,#d9dbd5 130px, #d9dbd5 100%);
+}
+
+
+.container {
+    position: relative;
+    width: 1396px;
+    max-width: 100%;
+    height: calc(100vh - 40px);
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0,0.06),0 2px 5px 0 rgba(0, 0, 0,0.06);
+    display: flex;
+}
+
+.container .leftside {
+    position: relative;
+    flex: 30%;
+    background: #fff;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    
+}
+
+.container .rightside {
+    position: relative;
+    flex: 70%;
+    background: lightslategray;
+    border-right: 1px solid #000;
+}
+
+.container .rightside::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(whatsapp\ img.png);   
+    opacity: 0.50;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #ededed;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 15px;
+
+}
+
+.userimg {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.header .userimg .move {
+display: flex;
+left: 400px;
+top: 50px;
+position: relative;
+justify-content: center;
+align-items: center;
+}
+
+
+.move {
+display: flex;
+left: 400px;
+top: 50px;
+position: relative;
+justify-content: center;
+align-items: center;
+}
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav_icons {
+    display: flex;
+}
+
+.nav_icons li {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    color: #51585c;
+    font-size: 1.5em;
+    margin-left: 22px;
+
+}
+
+.nav_icons li .chatbox {
+    position: relative;
+    right: 60px;
+
+}
+
+
+
+.chatlist {
+    position: relative;
+    height: calc(100% - 110px); /* 60 + 50 = 110*/
+    overflow-y: auto;
+    
+}
+
+.chatlist .block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0,0.06);
+}
+
+
+.chatlist .block .imgbx {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.chatlist .block .details {
+    position: relative;
+    width: 100%;
+
+}
+
+.chatlist .block .details .listHead {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+
+.chatlist .block .details .write {
+    display: flex;
+    left: 400px;
+    top: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.message_c {
+    display: flex;
+    right: 70px;
+    top: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message_c p {
+    color: #aaa;
+    right: 70px;
+    top: 70px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.message_c b {
+    background: #06d755;
+    color: #fff;
+    right: 70px;
+    top: 70px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+}
+
+.message_c {
+    display: flex;
+    right: 70px;
+    top: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message_c p {
+    color: #aaa;
+    right: 70px;
+    top: 70px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.message_c b {
+    background: #06d755;
+    color: #fff;
+    right: 70px;
+    top: 70px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+}
+
+
+.imgText {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgText h4 {
+    font-weight: 500;
+    line-height: 1,2em;
+    margin-left: 15px;
+}
+
+.imgText h4 span {
+   font-size: 0.8em;
+   color: #555;
+}
+
+/* chat box */
+.chatBox {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 120px);/* 60 + 60=120px*/
+}
+
+.chatBox .message-my_message {
+    position: relative;
+    display: flex;
+    top: 60px;
+    right: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #06d755;
+
+
+} 
+
+
+
+
+

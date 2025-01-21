@@ -1,0 +1,179 @@
+@import url('https://fronts.gogglepis.com/css?family=poppins:300;400;500;600;700&display=swap');
+@import url('https://fronts.gogglepis.com/css?family=orbitron:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #081b29;
+}
+
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: 40%;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(#f00,#f0f);
+    border-radius: 50%;
+}
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    font-weight: 400;
+    color:#5bb7f8;
+}
+
+.cardb {
+    position: relative;
+    width: 510px;
+    height: 310px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    opacity: 0.9;
+   
+}
+
+.face-back {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 35px #00000000;
+    border-radius: 15px;
+    background: linear-gradient(white,#081b29);
+    backdrop-filter: blur(100%);
+    transform-style: preserve-3d;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.cardb .face-back .blackbar {
+    position: absolute;
+    top: 35px;
+    
+
+}
+
+.cardb .face-back .elephant {
+    position: absolute;
+    size: 10px;
+    top: 250px;
+    left: 450px;
+    max-width: 40px;
+}
+   
+
+    
+
+
+.cardb:hover .face-back {
+    transform: rotateY(180deg);
+}
+
+.cardb .face-back {
+    transform: rotateY(360deg);
+}
+
+.cardb:hover .face-back {
+    transform: rotateY(360deg);
+}
+
+
+
+.cardb .face-back .ica {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    font-size: 9px;
+    font-weight: 200;
+    color: lightslategray;
+}
+
+.cardb .face-back .scm {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    size: 15px;
+    font-size: 9px;
+    font-weight: 200;
+    color: lightslategray;
+}
+
+.cardb .face-back .Aut{
+    position: absolute;
+    top: 85px;
+    left: 20px;
+    font-size: 10.5px;
+    font-weight: 400;
+    color: lightslategray;
+}
+
+.cardb .face-back .notvalid {
+    position: absolute;
+    top: 85px;
+    right: 200px;
+    font-size: 10.5px;
+    font-weight: 200;
+    color: lightslategray;
+   
+}
+
+.cardb .face-back .why{
+    position: absolute;
+    top: 110px;
+    left: 16px;
+}
+
+.cardb .face-back .number {
+    position: absolute;
+    top: 115px;
+    right: 230px;
+    font-style: italic;
+}
+
+.cardb .face-back .letter {
+    position: absolute;
+    top: 149px;
+    right: 1px;
+    font-size: 12px;
+
+}
+
+.cardb .face-back .bank {
+    position: absolute;
+    right: 70px;
+    top: 260px;
+    color: lightslategray;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 24px;
+}
+.cardb .face-back .since {
+    position: absolute;
+    right: 70px;
+    top: 280px;
+    color: lightslategray;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 15px;
+}
