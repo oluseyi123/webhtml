@@ -1,0 +1,288 @@
+@import url('https://fronts.gogglepis.com/css?family=poppins:300;400;500;600;700&display=swap');
+@import url('https://fronts.gogglepis.com/css?family=orbitron:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+body {
+    overflow: hidden;
+    border-width: 50px;
+}
+
+section {
+    display: flex;
+    border-width: 50px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: 990px;
+    background-color: white;
+    background-repeat: no-repeat;
+    
+    
+}
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: oblique;
+    color:#5bb7f8;
+}
+
+.users {
+    position: relative;
+    left: 70px;
+    top: 90px;
+    font-size: 24px;
+    color: purple;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border-color: red;
+    
+}
+
+.coment {
+    position: relative;
+    left: 70px;
+    top: 130px;
+    font-size: 7px;
+    font-weight: 100;
+    color: purple;
+
+
+}
+
+.baby {
+    position: relative;
+    left: 905px;
+    bottom: 959px;
+    box-sizing: border-box;
+    border: 2px solid purple;
+    border-color: purple;
+    max-width: 238px;
+    height: 40px;
+    background-color: white;
+}
+.name {
+    position: relative;
+    left: 973px;
+    bottom: 990px;
+    color: purple;
+
+
+}
+.star {
+    position: relative;
+    max-width: 49px;
+    left: 920px;
+    bottom: 1165px;
+    background: wheat;
+}
+
+.write {
+    position: relative;
+    left: 929px;
+    bottom: 966px;
+    box-sizing: border-box;
+    border: 2px solid purple;
+    border-color: purple;
+    max-width: 275px;
+    height: 40px;
+    background-color: white;
+
+
+}
+
+.come {
+    position: relative;
+    left: 999px;
+    bottom: 995px;
+    color: purple;
+
+}
+.irawo {
+    position: relative;
+    max-width: 49px;
+    left: 889px;
+    bottom: 1110px;
+}
+
+.wrote {
+    position: relative;
+    left: 956px;
+    bottom: 974px;
+    box-sizing: border-box;
+    border: 2px solid purple;
+    border-color: purple;
+    max-width: 264px;
+    height: 40px;
+    background-color: white;
+
+
+}
+
+.vote {
+    position: relative;
+    left: 1022px;
+    bottom: 1004px;
+    color: purple;
+
+}
+.moon {
+    position: relative;
+    max-width: 49px;
+    left: 862px;
+    bottom: 1062px;
+}
+
+.csll {
+    
+        position: relative;
+        left: 140px;
+        top: 210px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border: 2px solid purple;
+        border-color: purple;
+        max-width: 300px;
+        height: 170px;
+        background-color: purple;
+     
+        
+
+}
+
+.adex {
+position: relative;
+left: 470px;
+bottom: 60px;
+box-sizing: border-box;
+border: 2px solid purple;
+border-radius: 20px;
+border-color: purple;
+max-width: 309px;
+height: 170px;
+background-color: purple;
+}
+
+.xdea{
+position: relative;
+left: 820px;
+bottom: 309px;
+box-sizing: border-box;
+border-radius: 20px;
+border: 2px solid purple;
+border-color: purple;
+max-width: 309px;
+height: 164px;
+background-color: purple;
+}
+
+.abim {
+    position: relative;
+    left: 200px;
+    top: 50px;
+    font-size: 19px;
+    color: white;
+}
+
+.veried {
+    position: relative;
+    left: 200px;
+    top: 50px;
+    font-size: 15px;
+    color: gold;
+
+}
+
+.cont {
+    position: relative;
+    left: 157px;
+    top: 70px;
+    color: white;
+
+}
+.fine{
+    position: relative;
+    left: 529px;
+    bottom: 220px;
+    color: white;
+    font-size: 19px;
+
+}
+
+.nine{
+    position: relative;
+    left: 529px;
+    bottom: 217px;
+    color: gold;
+    font-size: 16px;
+
+}
+
+.cotn{
+    position: relative;
+    left: 487px;
+    bottom: 205px;
+    color: white;
+
+}
+
+.vine{
+    position: relative;
+    left: 890px;
+    bottom: 465px;
+    color: white;
+    font-size: 19px;
+
+}
+
+.aine{
+    position: relative;
+    left: 890px;
+    bottom: 459px;
+    color: gold;
+    font-size: 16px;
+
+}
+
+.dotn{
+    position: relative;
+    left: 840px;
+    bottom: 450px;
+    color: white;
+
+}
+.test {
+    position: relative;
+    size: 10px;
+    left: 666px;
+    bottom: 760px;
+    max-width: 55px;
+}
+
+.ellon {
+    position: relative;
+    size: 10px;
+    left: 259px;
+    bottom: 793px;
+    max-width: 48px;
+
+}
+
+.mat {
+    position: relative;
+    size: 10px;
+    right: 123px;
+    bottom: 818px;
+    max-width: 48px;
+
+}
+

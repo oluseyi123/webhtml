@@ -1,0 +1,668 @@
+@import url('https://fronts.gogglepis.com/css?family=poppins:300;400;500;600;700&display=swap');
+@import url('https://fronts.gogglepis.com/css?family=orbitron:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body {
+    overflow: hidden;
+    box-sizing: border-box;
+    border-color: #f00;
+    border-width: 50px;
+}
+
+section {
+    display: flex;
+     box-sizing: border-box;
+    border-color: #f00;
+    border-width: 50px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(set.png);
+    background-size: 990px;
+    background-color: wheat;
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: 40%;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient;
+    border-radius: 50%;
+}
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: oblique;
+    color:#5bb7f8;
+
+}
+
+.phone {
+    position: relative;
+    bottom: 58px;
+    right: 195px;
+    width: 300px;
+    height: 630px;
+    transform-style: preserve-3d;
+    transition: ease-in;
+    transition-delay: 1s;
+    perspective: 500px;
+    
+}
+
+.face-front {
+    position: absolute;
+    top: 50px;
+    right: 109px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 35px #00000000;
+    border-radius: 22px;
+    border: 7px solid #fff;
+    border-color: black;
+    background: purple;
+    backdrop-filter: blur(100%);
+    transform-style: preserve-3d;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.phone:hover .face-front {
+    transform: rotateY(360deg);
+    ;
+}
+
+.phone .face-back {
+    transform: rotateY(180deg);
+}
+
+.phone:hover .face-back {
+    transform: rotateY(180deg);
+}
+
+.phone .face-front .camera {
+    position: absolute;
+    size: 19px;
+    top: 5px;
+    left: 219px;
+    max-width: 16px;
+
+}
+.battery {
+    position: absolute;
+    size: 19px;
+    top: 6px;
+    left: 238px;
+    max-width: 14px;
+
+}
+
+.wifi {
+    position: absolute;
+    size: 19px;
+    top: 6px;
+    right: 238px;
+    max-width: 14px;
+}
+
+.charge {
+    position: absolute;
+    size: 19px;
+    top: 6px;
+    left: 256px;
+    max-width: 16px;
+}
+.phone .face-front .chat {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid purple;
+    border-color: purple;
+    top: 34px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: whitesmoke;
+    max-width: 45px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.phone .face-front .talk { 
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 36px;
+    left: 190px;
+    font-size: 6px;
+    font-weight: 200;
+    color: black;
+    background-color:white;
+    max-width: 60px;
+    max-height: 40px;
+    
+}
+
+.phone .face-front .ta {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 40px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: white;
+    max-width: 60px;
+    max-height: 40px;
+
+}
+
+.phone .face-front .ti {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 42px;
+    left: 190px;
+    font-size: 6px;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+
+}
+
+.phone .face-front .lk{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 46px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.phone .face-front .al{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 48px;
+    left: 190px;
+    font-size: 6px;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+
+}
+
+.phone .face-front .ch{  
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 52px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.phone .face-front .he{  position: relative;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 54px;
+    left: 190px;
+    font-size: 6px;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    max-width: 50px;
+    max-height: 40px;
+    
+}
+
+.phone .face-front .fr{  position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 58px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: white;
+    max-width: 80px;
+    max-height: 40px;
+}
+
+.phone .face-front .at{  position: relative;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 60px;
+    left: 190px;
+    font-size: 6px;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+    
+}
+
+.phone .face-front .tc{  
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 65px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.phone .face-front .ct{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 67px;
+    left: 190px;
+    font-size: 6px;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    max-width: 45px;
+    max-height: 40px;
+}
+
+.phone .face-front .ab{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 71px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: white;
+    max-width: 45px;
+    max-height: 40px;
+}
+
+.phone .face-front .cd{ 
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 73px;
+    left: 190px;
+    font-size: 6px;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.phone .face-front .ef{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 78px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.phone .face-front .gh{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 81px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.phone .face-front .ij{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 86px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.phone .face-front .kl{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 89px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: white;
+    max-width: 135px;
+    max-height: 40px;
+
+}
+
+.phone .face-front .mn{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 95px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.phone .face-front .op{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 93px;
+    left: 190px;
+    font-size: 6px;
+    font-weight: 200;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+    
+}
+
+.phone .face-front .qr{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 98px;
+    left: 190px;
+    font-size: 6px;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.phone .face-front .st{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 102px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color:blue;
+    background-color: white;
+    max-width: 120px;
+    max-height: 70px;
+}
+
+.phone .face-front .uv{ 
+     position: relative;
+     box-sizing: border-box;
+     border-radius: 12px;
+     border: 2px solid #fff;
+     border-color: #fff;
+    top: 106px;
+    left: 190px;
+    font-size: 6px;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.phone .face-front .wx{  
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 109px;
+    left: 190px;
+    font-size: 6px;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+    
+}
+
+.phone .face-front .yy{  
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 108px;
+    left: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: blue;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.phone .face-front .zz{ 
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    border-color: #fff;
+    top: 110px;
+    left: 190px;
+    font-size: 6px;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    max-width: 90px;
+    max-height: 40px;
+    
+}
+
+
+
+
+.face {
+    position: absolute;
+    top: 4px;
+    right: 80px;
+    width: 50%;
+    height: 2%;
+    box-shadow: 0 15px 35px #00000000;
+    border-radius: 5px;
+    border-color: #5bb7f8;
+    background: black;
+    backdrop-filter: blur(100%);
+    transform-style: preserve-3d;
+    transition: 1s;
+    backface-visibility: visible;
+    overflow: hidden;
+    
+
+}
+
+
+.front {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    width: 10%;
+    height: 5%;
+    box-shadow: 0 15px 35px #00000000;
+    border-radius: 15px;
+    border: 2px;
+    box-sizing: 2px;
+    background: linear-gradient(black,pink);
+    backdrop-filter: blur(100%);
+    transform-style: preserve-3d;
+    transition: 1s;
+    backface-visibility: visible;
+
+}
+
+.phone .face-front .service {
+    position: absolute;
+    size: 10px;
+    top: 6px;
+    left: 70px;
+    max-width: 12px;
+
+}
+
+
+
+
+
+
+
+
+
+.about-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 2s;
+
+}
+.about-sci a:hover {
+    color: #081b29;
+}
+
+.about-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: lightblue;
+    z-index: -1;
+    transition: 2s;
+
+}
+
+
+.about-sci a:hover::before {
+    width: 100px;
+
+}
+
+
+
+
